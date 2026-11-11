@@ -1,0 +1,33 @@
+:root {
+  --ink: #14212b; --muted: #5b6b77; --line: #dfe5ea; --bg: #f6f8f9;
+  --accent: #0f7b6c; --accent-ink: #ffffff;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink); background: #fff; }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+.hero { background: var(--bg); border-bottom: 1px solid var(--line); padding: 64px 0 48px; }
+.eyebrow { color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: .06em; font-size: 13px; margin: 0; }
+h1 { font-size: clamp(30px, 5vw, 44px); line-height: 1.15; margin: 8px 0 12px; }
+.lead { color: var(--muted); max-width: 680px; font-size: 18px; }
+.actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
+.btn { display: inline-block; padding: 11px 18px; border-radius: 8px; border: 1px solid var(--line); color: var(--ink); text-decoration: none; font-weight: 600; background: #fff; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+section { padding: 40px 0; }
+h2 { font-size: 26px; margin: 0 0 18px; }
+.grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.tile { border: 1px solid var(--line); border-radius: 12px; padding: 18px; }
+.tile h3 { margin: 0 0 6px; }
+.tile p { margin: 0; color: var(--muted); }
+.filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px; }
+.chip { border: 1px solid var(--line); background: #fff; border-radius: 999px; padding: 7px 14px; cursor: pointer; font: inherit; }
+.chip.active { background: var(--ink); color: #fff; border-color: var(--ink); }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; }
+.card { border: 1px solid var(--line); border-radius: 12px; padding: 16px; cursor: pointer; transition: border-color .15s; }
+.card:hover { border-color: var(--accent); }
+.card h3 { margin: 2px 0 6px; font-size: 19px; }
+.sector, .ticker { margin: 0; color: var(--muted); font-size: 14px; }
+.details { margin-top: 10px; font-size: 14px; }
+.out { color: var(--accent); font-weight: 600; }
+.cta { text-align: center; background: var(--bg); border-radius: 16px; padding: 40px 20px; margin: 20px 0 40px; }
+footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding: 20px; }
+footer a { color: inherit; }
