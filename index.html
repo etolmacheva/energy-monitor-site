@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Монитор цифровизации энергетики</title>
+  <meta name="description" content="Учебно-исследовательский проект: спрос на цифровые кадры и цифровые инициативы российских энергокомпаний.">
+  <link rel="stylesheet" href="assets/style.css">
+
+  <!-- Google Tag Manager: ЗАМЕНИТЕ GTM-XXXXXXX на ID своего контейнера (шаг 3.2 инструкции) -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Исследовательский пет-проект</p>
+      <h1>Монитор цифровизации энергетики</h1>
+      <p class="lead">Как российские энергокомпании наращивают цифровые компетенции: IT-вакансии на hh.ru,
+        цифровые инициативы из годовых отчётов и динамика акций на Мосбирже.</p>
+      <div class="actions">
+        <a class="btn primary" href="report.pdf" id="download-report" download>Скачать методологию (PDF)</a>
+        <a class="btn" href="#companies">Смотреть компании</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="about">
+      <h2>О проекте</h2>
+      <div class="grid3">
+        <div class="tile"><h3>Кадры</h3><p>Ежедневные снимки IT-вакансий энергокомпаний: число, роли, навыки, зарплатные вилки.</p></div>
+        <div class="tile"><h3>Инициативы</h3><p>Цифровые подстанции, ИИ, цифровые двойники, импортозамещение ПО — по данным раскрытия компаний.</p></div>
+        <div class="tile"><h3>Рынок</h3><p>Котировки и обороты акций публичных компаний сектора на Московской бирже.</p></div>
+      </div>
+    </section>
+
+    <section id="companies">
+      <h2>Компании</h2>
+      <div class="filters" role="group" aria-label="Фильтр по отрасли">
+        <button class="chip active" data-sector="all">Все</button>
+        <button class="chip" data-sector="Электроэнергетика">Электроэнергетика</button>
+        <button class="chip" data-sector="Нефть и газ">Нефть и газ</button>
+        <button class="chip" data-sector="Атомная энергетика">Атомная энергетика</button>
+      </div>
+      <div id="cards" class="cards"></div>
+    </section>
+
+    <section id="subscribe" class="cta">
+      <h2>Хотите получать обновления?</h2>
+      <p>Раз в месяц — короткая сводка по цифровизации отрасли.</p>
+      <!-- ЗАМЕНИТЕ ссылку на свою Яндекс Форму или Google Форму -->
+      <a class="btn primary" id="subscribe-btn" href="https://forms.yandex.ru/u/6af46db62c4f8927d34cc4a2" target="_blank" rel="noopener">Подписаться</a>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <p>Источники данных: <a href="https://www.moex.com/" target="_blank" rel="noopener">Московская биржа</a>,
+      <a href="https://hh.ru/" target="_blank" rel="noopener">hh.ru</a>, годовые отчёты компаний.
+      Проект учебный, не является инвестиционной рекомендацией.</p>
+      <p>Сайт использует Яндекс Метрику и Google Analytics для сбора обезличенной статистики посещений.</p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
